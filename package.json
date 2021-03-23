@@ -1,0 +1,37 @@
+{
+  "name": "abra-token",
+  "version": "1.0.0",
+  "description": "An Instant ERC-20 Cryptocurrency Abra Exchange",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./scripts/start_ganache.sh && ./scripts/test.sh",
+    "build": "rm -rf build/ && truffle compile",
+    "coverage": "truffle run coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alifarukm/abra-contract"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alifarukm/abra-contract/issues"
+  },
+  "homepage": "https://github.com/alifarukm/abra-contract#readme",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.2.1",
+    "dotenv": "^8.2.0",
+    "truffle-contract-size": "^2.0.1"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "chai-as-promised": "7.1.1",
+    "chai-bignumber": "3.0.0",
+    "truffle": "^5.2.3",
+    "truffle-plugin-verify": "^0.5.0"
+  }
+}
